@@ -1,0 +1,58 @@
+[
+  {
+    "path": "$PPRDIR/../ip/ce_fft_ip/ce_fft_ip.xci",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../rtl/ce_async_fifo.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../rtl/ce_complex_gain.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../rtl/ce_fft_core.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../rtl/ce_fft_engine.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../rtl/ce_fft_ols_top.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../rtl/adda_fft_path.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../rtl/ce_coeff_control.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../rtl/ce_config.vh",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../coeff/h_im.mem",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../coeff/h_im_2.mem",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../coeff/h_re.mem",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../coeff/h_re_2.mem",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/tb_main.sv",
+    "exists": true
+  }
+]

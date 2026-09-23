@@ -1,0 +1,227 @@
+[
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\rtl\\ce_complex_gain.sv",
+    "target": "rtl\\ce_complex_gain.sv",
+    "sha256": "757acde6d8507d1cef9b086b5e1d3a5f2baeb512c9eb12dbca07bad8c9f01971"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\rtl\\ce_fft_core.sv",
+    "target": "rtl\\ce_fft_core.sv",
+    "sha256": "8e54ce14c251dfe0e49c494fc9f1fbebc0174a72d64ddd131503738774d1a36e"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\rtl\\ce_fft_engine.sv",
+    "target": "rtl\\ce_fft_engine.sv",
+    "sha256": "f543e9589d16f03d6b3e39952e95f79e3f9f4d37670aec3fa3b27c0dc090fd2b"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\rtl\\ce_fft_ols_top.sv",
+    "target": "rtl\\ce_fft_ols_top.sv",
+    "sha256": "786de58ac8c146b0e1998690eae46974442e76cbf30890f71ced169802590ffd"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_rtl\\adda_fft_path.sv",
+    "target": "rtl\\adda_fft_path.sv",
+    "sha256": "b1886f42dc1b1cbd814c106f42a133b235ef826c13e74fefb2fcff4a1f36ad49"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_rtl\\ce_async_fifo.sv",
+    "target": "rtl\\ce_async_fifo.sv",
+    "sha256": "5b15317cb709e9d8c35cddbdfff968b08aa9f7ccd35fecad16c22c6a2644fb40"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_rtl\\ce_coeff_control.sv",
+    "target": "rtl\\ce_coeff_control.sv",
+    "sha256": "599f9005f7de379fc23543d475fdff7b361f0219b79689091491fdf9b5a0d60b"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_rtl\\ce_nco_vio_ctrl.v",
+    "target": "rtl\\ce_nco_vio_ctrl.v",
+    "sha256": "d82c25b653886174b1b55726d5d33081e4ad76c4ff0915b8673abde697fdd1b6"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_sources\\ad_data_cdc.v",
+    "target": "rtl\\ad_data_cdc.v",
+    "sha256": "f942a4acdf0f9b62e34c6066f6399ff1a4fbdc999cc79d14bd359a331107c8ba"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_sources\\da_data_cdc.v",
+    "target": "rtl\\da_data_cdc.v",
+    "sha256": "76a22da7d23949beacafffcea5c3f4c6e8ba7358942f8feb81ba089358c3d7a4"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_sources\\dev_reset_module.v",
+    "target": "rtl\\dev_reset_module.v",
+    "sha256": "4cdc66c51cf9c81bc3cfdb227c8e922a3d47dfa739d41365f9e51ff6eb8f49d7"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_sources\\hmc7044_module.edf",
+    "target": "rtl\\hmc7044_module.edf",
+    "sha256": "23a2d067b9c6f46052aa7e5c98396f5efa1e01acf41ab8a94f9ce3d45850c18c"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_sources\\hmc7044_module.v",
+    "target": "rtl\\hmc7044_module.v",
+    "sha256": "bb97293dda80638f8a3d875cd4151193d142d84fcf1311a87da86a6d31c1e1e7"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_sources\\sys_pins.xdc",
+    "target": "adda\\constraints\\sys_pins.xdc",
+    "sha256": "378d312ef9b0b814b7fb95775e13f780e6ed2bc6a46e1942b4619367a87b16f9"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_sources\\sys_top.v",
+    "target": "rtl\\sys_top.v",
+    "sha256": "9ac7a0a1e882258f5e369130d96818084005d35f35369fd23747a74d9a566403"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_sources\\unused_qspi_iob.xdc",
+    "target": "adda\\constraints\\unused_qspi_iob.xdc",
+    "sha256": "6ef4a95ffd0a32382df329093d8bac895b3d15c2d4ae1fa03baabce557f58808"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board_sources\\wire3_spi.v",
+    "target": "rtl\\wire3_spi.v",
+    "sha256": "1a0f2893f402deaf1862f8f665fb6ff3dbce48fb78e463b4964882b30098f23f"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board\\ce_fft_adda.srcs\\sources_1\\ip\\ce_fft_ip\\ce_fft_ip.xci",
+    "target": "ip\\ce_fft_ip\\ce_fft_ip.xci",
+    "sha256": "bc167edd659d5e2ca3980bce838c3fb6292b95b020b103c06a9c52554333ff89"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board\\ce_fft_adda.srcs\\sources_1\\ip\\ila_adc\\ila_adc.xci",
+    "target": "ip\\ila_adc\\ila_adc.xci",
+    "sha256": "84a5a93e40d78ec41138644b5b41661c7dbd2e3ba14a4a00d91683d10fbf8e29"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board\\ce_fft_adda.srcs\\sources_1\\ip\\fifo_generator_0\\fifo_generator_0.xci",
+    "target": "ip\\fifo_generator_0\\fifo_generator_0.xci",
+    "sha256": "2b4615cc644f52be91b25c4fa9744e5e9b2d632ec4da33f610c0900e29faed97"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\board\\ce_fft_adda.srcs\\sources_1\\bd\\design_1\\design_1.bd",
+    "target": "adda\\bd\\design_1\\design_1.bd",
+    "sha256": "8cdf52acd1cfbd8abe9214e2ddec33a1f9b367bbfbf925807cde04ce05195947"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\coeff\\h_im.mem",
+    "target": "coeff\\h_im.mem",
+    "sha256": "cdaf716838bc6c484301eb80c67e7ef89d1404d87fdde2f1cb84fe557077958c"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\coeff\\h_im_2.mem",
+    "target": "coeff\\h_im_2.mem",
+    "sha256": "2949ff9375efcab026e8fda7af31e8e4129e3b84e797a1fd0228a1a3c8c20ee6"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\coeff\\h_re.mem",
+    "target": "coeff\\h_re.mem",
+    "sha256": "22b82be76eaffbcd986ab3ac4d17956100cb93d82a7c086f7d75bee5eeccc3e6"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\adda\\coeff\\h_re_2.mem",
+    "target": "coeff\\h_re_2.mem",
+    "sha256": "6ef9f3f69f4179194c3168f662c26b118ddcc6c7e716d6af872aed48b28eb1ea"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\ce_coeff.c",
+    "target": "ps\\src\\ce_coeff.c",
+    "sha256": "2c61e41d2d38a66e324e23c90e18b69c8dd7c391c103a3497ec718fc2c2a678e"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\ce_coeff.h",
+    "target": "ps\\src\\ce_coeff.h",
+    "sha256": "a702eea26d3fb5a6fd378da65414d391b8eabfa397be5065454080c310d3f5ed"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\ce_coeff_files.c",
+    "target": "ps\\src\\ce_coeff_files.c",
+    "sha256": "439b3e7dbba86be0f5808006657ac13d36948c57c72142f61f6f1dfc87ba1b21"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\ce_nco.h",
+    "target": "ps\\src\\ce_nco.h",
+    "sha256": "ddc218b269888ca31802c5aac072bfab29abea6ac6f867ae9ca43f155764be2e"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\delay.c",
+    "target": "ps\\src\\delay.c",
+    "sha256": "2e5f5f38914f65bd4184f627edb1ecacc27af25a23c836df444d11ee1adf6660"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\delay.h",
+    "target": "ps\\src\\delay.h",
+    "sha256": "f4a704cc60bb1ea96fe60cf829df844ca72f5b65b4973c1901598d1483c8358c"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\lscript.ld",
+    "target": "ps\\src\\lscript.ld",
+    "sha256": "bda820415664e41b945de267d5900321f034549847ab59bcd87005925802886b"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\main.c",
+    "target": "ps\\src\\main.c",
+    "sha256": "3a3c8c688802673cadf5e10a60c3cf5bec36f45e3473828a82fc8b35c9d8e202"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\parameters.h",
+    "target": "ps\\src\\parameters.h",
+    "sha256": "32267d73b543c4c97097cf21c5f7dfcaf4c7a74f94b53d162e07c79eb2772a0d"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\README.txt",
+    "target": "ps\\src\\README.txt",
+    "sha256": "265e6e74d7913c397b2e78997cb08682ffdae7c838f321a3f21f521f51e92dbc"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\coeff\\h_im.mem",
+    "target": "ps\\src\\coeff\\h_im.mem",
+    "sha256": "cdaf716838bc6c484301eb80c67e7ef89d1404d87fdde2f1cb84fe557077958c"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\coeff\\h_im_2.mem",
+    "target": "ps\\src\\coeff\\h_im_2.mem",
+    "sha256": "2949ff9375efcab026e8fda7af31e8e4129e3b84e797a1fd0228a1a3c8c20ee6"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\coeff\\h_re.mem",
+    "target": "ps\\src\\coeff\\h_re.mem",
+    "sha256": "22b82be76eaffbcd986ab3ac4d17956100cb93d82a7c086f7d75bee5eeccc3e6"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\coeff\\h_re_2.mem",
+    "target": "ps\\src\\coeff\\h_re_2.mem",
+    "sha256": "6ef9f3f69f4179194c3168f662c26b118ddcc6c7e716d6af872aed48b28eb1ea"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\app_seu\\src\\coeff\\README.txt",
+    "target": "ps\\src\\coeff\\README.txt",
+    "sha256": "b8da6a417bafdc757cd01f85d75ed0c479a0c5360303633e7a64be0e50090eb5"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\FINE_VIO.md",
+    "target": "docs\\legacy_reference\\FINE_VIO.md",
+    "sha256": "6bbd3aee361d017635c840d3069ca6a0cdef0a88eeee4af5ea5c88bc1d13bbea"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\ONLINE_UPDATE.md",
+    "target": "docs\\legacy_reference\\ONLINE_UPDATE.md",
+    "sha256": "f52b8b00e9bbea72f946402ac3753d1e9435fde1a6b5e0a68f9dff5ca1e270ca"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\SINGLE_PATH_MODE.md",
+    "target": "docs\\legacy_reference\\SINGLE_PATH_MODE.md",
+    "sha256": "1ede6a74342b1861c558b3ea1e8527411511c39717cd83ef44f556c8fef2bb19"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\CE_FFT_pl\\WIDTH28_SYNC.md",
+    "target": "docs\\legacy_reference\\WIDTH28_SYNC.md",
+    "sha256": "89cace9cd119bd559ab122c1f4e8d13ccc096f3e02af484a007877f9e3fd9b60"
+  },
+  {
+    "source": "D:\\CE\\CE_0922\\CE_FFT_mod_fre\\tools\\nco_word.ps1",
+    "target": "docs\\legacy_reference\\nco_word.ps1",
+    "sha256": "c8b3c3ddb2bbb8a4fce4f4a517f9fbff5c83cd4e184cdd38bba603704bf1a543"
+  }
+]

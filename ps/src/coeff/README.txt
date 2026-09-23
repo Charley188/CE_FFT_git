@@ -1,0 +1,1 @@
+Replace the four .mem files here, then Refresh, Clean, Build and Run in Vitis Classic. Each file: 2048 raw 18-bit values, five hexadecimal digits per value. See CE_FFT_pl/ONLINE_UPDATE.md. No Python or Tcl upload/build workflow is required.

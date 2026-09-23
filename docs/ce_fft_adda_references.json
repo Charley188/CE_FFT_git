@@ -1,0 +1,110 @@
+[
+  {
+    "path": "$PPRDIR/../../rtl/ce_nco_vio_ctrl.v",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../ip/ce_fft_ip/ce_fft_ip.xci",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../bd/design_1/design_1.bd",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../ip/ila_adc/ila_adc.xci",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/hmc7044_module.edf",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../design_1_wrapper.v",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/dev_reset_module.v",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/hmc7044_module.v",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/wire3_spi.v",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/adda_fft_path.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/ce_async_fifo.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/ce_coeff_control.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/ce_complex_gain.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/ce_fft_core.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/ce_fft_engine.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/ce_fft_ols_top.sv",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/ce_config.vh",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/sys_top.v",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/ad_data_cdc.v",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../rtl/da_data_cdc.v",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../coeff/h_im.mem",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../coeff/h_im_2.mem",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../coeff/h_re.mem",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../coeff/h_re_2.mem",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../../ip/fifo_generator_0/fifo_generator_0.xci",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../constraints/sys_pins.xdc",
+    "exists": true
+  },
+  {
+    "path": "$PPRDIR/../constraints/unused_qspi_iob.xdc",
+    "exists": true
+  }
+]

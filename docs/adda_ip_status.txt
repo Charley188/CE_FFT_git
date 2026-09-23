@@ -1,0 +1,180 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Sep 23 17:19:07 2026
+| Host         : Charlieco running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 32 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name                      | Status     | Recommendation      | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                                    |            |                     | Log       |                    | Version |               | License    |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| ce_fft_ip                          | Up-to-date | No changes required |  *(1)     | Fast Fourier       | 9.1     | 9.1 (Rev. 10) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           | Transform          | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 10)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_adc0_01_phase_rst_zero_0  | Up-to-date | No changes required |  *(2)     | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 8)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_adc0_01_phase_zero_0      | Up-to-date | No changes required |  *(3)     | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 8)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_adc0_23_phase_rst_zero_0  | Up-to-date | No changes required |  *(4)     | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 8)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_adc0_23_phase_zero_0      | Up-to-date | No changes required |  *(5)     | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 8)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_interconnect_0_1      | Up-to-date | No changes required |  *(6)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 30) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 30)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_quad_spi_0_0          | Up-to-date | No changes required |  *(7)     | AXI Quad SPI       | 3.2     | 3.2 (Rev. 28) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 28)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_clk_wiz_0_0               | Up-to-date | No changes required |  *(8)     | Clocking Wizard    | 6.0     | 6.0 (Rev. 13) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 13)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_clk_wiz_1_0               | Up-to-date | No changes required |  *(9)     | Clocking Wizard    | 6.0     | 6.0 (Rev. 13) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 13)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_clk_wiz_2_0               | Up-to-date | No changes required |  *(10)    | Clocking Wizard    | 6.0     | 6.0 (Rev. 13) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 13)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_clk_wiz_adc_0             | Up-to-date | No changes required |  *(11)    | Clocking Wizard    | 6.0     | 6.0 (Rev. 13) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 13)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_dac00_phase_rst_zero_0    | Up-to-date | No changes required |  *(12)    | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 8)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_dac00_phase_zero_0        | Up-to-date | No changes required |  *(13)    | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 8)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_dac02_phase_rst_zero_0    | Up-to-date | No changes required |  *(14)    | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 8)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_dac02_phase_zero_0        | Up-to-date | No changes required |  *(15)    | Constant           | 1.1     | 1.1 (Rev. 8)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 8)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_nco_adc_ctrl_0            | Up-to-date | No changes required | Change    | ce_nco_vio_ctrl_v1 | 1.0     | 1.0 (Rev. 1)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                    |            |                     | available |                    | 1)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_nco_dac_ctrl_0            | Up-to-date | No changes required | Change    | ce_nco_vio_ctrl_v1 | 1.0     | 1.0 (Rev. 1)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                    |            |                     | available |                    | 1)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_rst_ps8_0_100M_0          | Up-to-date | No changes required |  *(16)    | Processor System   | 5.0     | 5.0 (Rev. 14) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 14)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_system_ila_0_2            | Up-to-date | No changes required |  *(17)    | System ILA         | 1.1     | 1.1 (Rev. 15) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 15)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_usp_rf_data_converter_0_0 | Up-to-date | No changes required |  *(18)    | Zynq Ultrascale+   | 2.6     | 2.6 (Rev. 7)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           | RF Data Converter  | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 7)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_vio_adc_freq_0            | Up-to-date | No changes required |  *(19)    | VIO (Virtual       | 3.0     | 3.0 (Rev. 24) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           | Input/Output)      | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 24)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_vio_dac_freq_0            | Up-to-date | No changes required |  *(20)    | VIO (Virtual       | 3.0     | 3.0 (Rev. 24) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           | Input/Output)      | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 24)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_zynq_ultra_ps_e_0_0       | Up-to-date | No changes required |  *(21)    | Zynq UltraScale+   | 3.5     | 3.5 (Rev. 1)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           | MPSoC              | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 1)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| fifo_generator_0                   | Up-to-date | No changes required |  *(22)    | FIFO Generator     | 13.2    | 13.2 (Rev. 9) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 9)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| ila_adc                            | Up-to-date | No changes required |  *(23)    | ILA (Integrated    | 6.2     | 6.2 (Rev. 14) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           | Logic Analyzer)    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 14)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_378d_g_inst_0                   | Up-to-date | No changes required | Change    | Gigantic mux       | 1.0     | 1.0 (Rev. 1)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                    |            |                     | available |                    | 1)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_378d_ila_lib_0                  | Up-to-date | No changes required |  *(24)    | ILA (Integrated    | 6.2     | 6.2 (Rev. 14) | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           | Logic Analyzer)    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 14)     |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_378d_slot_0_ar_0                | Up-to-date | No changes required |  *(25)    | Concat             | 2.1     | 2.1 (Rev. 5)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 5)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_378d_slot_0_aw_0                | Up-to-date | No changes required |  *(26)    | Concat             | 2.1     | 2.1 (Rev. 5)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 5)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_378d_slot_0_b_0                 | Up-to-date | No changes required |  *(27)    | Concat             | 2.1     | 2.1 (Rev. 5)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 5)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_378d_slot_0_r_0                 | Up-to-date | No changes required |  *(28)    | Concat             | 2.1     | 2.1 (Rev. 5)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 5)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| bd_378d_slot_0_w_0                 | Up-to-date | No changes required |  *(29)    | Concat             | 2.1     | 2.1 (Rev. 5)  | Included   | xczu47dr-ffve1156-2- |
+|                                    |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                    |            |                     |           |                    | 5)      |               |            |                      |
++------------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xfft_v9_1/doc/xfft_v9_1_changelog.txt
+*(2) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(3) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(4) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(5) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(6) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(7) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/axi_quad_spi_v3_2/doc/axi_quad_spi_v3_2_changelog.txt
+*(8) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(9) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(10) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(11) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+*(12) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(13) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(14) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(15) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconstant_v1_1/doc/xlconstant_v1_1_changelog.txt
+*(16) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+*(17) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/system_ila_v1_1/doc/system_ila_v1_1_changelog.txt
+*(18) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/usp_rf_data_converter_v2_6/doc/usp_rf_data_converter_v2_6_changelog.txt
+*(19) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/vio_v3_0/doc/vio_v3_0_changelog.txt
+*(20) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/vio_v3_0/doc/vio_v3_0_changelog.txt
+*(21) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/zynq_ultra_ps_e_v3_5/doc/zynq_ultra_ps_e_v3_5_changelog.txt
+*(22) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/fifo_generator_v13_2/doc/fifo_generator_v13_2_changelog.txt
+*(23) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/ila_v6_2/doc/ila_v6_2_changelog.txt
+*(24) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/ila_v6_2/doc/ila_v6_2_changelog.txt
+*(25) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconcat_v2_1/doc/xlconcat_v2_1_changelog.txt
+*(26) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconcat_v2_1/doc/xlconcat_v2_1_changelog.txt
+*(27) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconcat_v2_1/doc/xlconcat_v2_1_changelog.txt
+*(28) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconcat_v2_1/doc/xlconcat_v2_1_changelog.txt
+*(29) d:/Xilinx/Vivado/2023.2/data/ip/xilinx/xlconcat_v2_1/doc/xlconcat_v2_1_changelog.txt
+
+
