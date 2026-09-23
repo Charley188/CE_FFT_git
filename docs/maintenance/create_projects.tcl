@@ -38,6 +38,7 @@ add_files $root/ip/ce_fft_ip/ce_fft_ip.xci
 generate_target simulation [get_ips ce_fft_ip]
 add_files -fileset sim_1 $root/tb/tb_main.sv
 set_property top adda_fft_path [get_filesets sources_1]
+set_property verilog_define CE_SIM_FAST_RESET [get_filesets sim_1]
 set_property top tb_main [get_filesets sim_1]
 set_property top_auto_set false [get_filesets sim_1]
 set_property xsim.simulate.runtime all [get_filesets sim_1]

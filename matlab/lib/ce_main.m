@@ -48,10 +48,11 @@ elseif mode==2
   result(k).first_mismatch=first;
   if cfg.plots
    figure('Name',['主干比对 ' outputs(k).name]);tiledlayout(2,2);
-   nexttile;plot([real(fixed),real(rtl)]);title('I：定点模型 / RTL');legend('MATLAB','RTL');
-   nexttile;plot([imag(fixed),imag(rtl)]);title('Q：定点模型 / RTL');
-   nexttile;plot([real(e),imag(e)]);title('逐点误差（LSB）');
-   nexttile;f=(-M/2:M/2-1)'*2.4e9/M;plot(f/1e6,20*log10(max(abs(fftshift(fft([floating,rtl]))),1e-12)));title('浮点 / RTL 频谱');xlabel('MHz');
+   K=min(128,M);n=(0:K-1)';
+   nexttile;plot(n,real(fixed(1:K)),'-',n,real(rtl(1:K)),'--');title(sprintf('I：前%d点',K));legend('MATLAB','RTL');xlabel('样点序号');ylabel('整数 LSB');grid on;
+   nexttile;plot(n,imag(fixed(1:K)),'-',n,imag(rtl(1:K)),'--');title(sprintf('Q：前%d点',K));xlabel('样点序号');ylabel('整数 LSB');grid on;
+   nexttile;plot((0:M-1)',[real(e),imag(e)]);title('全记录逐点误差');xlabel('样点序号');ylabel('LSB');legend('I','Q');grid on;
+   nexttile;f=(-M/2:M/2-1)'*2.4e9/M;plot(f/1e6,20*log10(max(abs(fftshift(fft([floating,rtl])))/(M*32768),1e-12)));title('幅度频谱');xlabel('MHz');ylabel('dBFS（32768参考）');legend('浮点','RTL');xlim([-1200 1200]);grid on;
   end
  end
  save(fullfile(cfg.output_dir,'comparison.mat'),'fixed','floating','result');

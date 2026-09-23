@@ -8,7 +8,7 @@
 
 ## 已接入
 
-- 实际工程 BD 和 board_sources/design_1/design_1.bd 均已修改。
+- 新工程只保留一份板级 BD：adda/bd/design_1/design_1.bd。
 - ADC Tile0 两路（01、23）和 DAC Tile0 两路（00、02）均为 Fine。
 - ADC/DAC 采样率仍为 4.8 GS/s，抽取/插值仍为 2，FFT 数据接口保持原配置。
 - 两个 VIO：vio_adc_freq、vio_dac_freq；两个控制器均使用 RFDC s_axi_aclk 的 100 MHz 时钟及对应同步复位，无新增跨时钟频率总线。
@@ -90,5 +90,5 @@ rtl/ce_config.vh 的 CE_ENABLE_SECOND_PATH 仍为原值 0。本功能已给两�
 - 复制工程原有的 ce_fft_ip stale 锁定已刷新；升级前后全部 CONFIG 参数逐项一致，IP 版本仍为 9.1 Rev.10。见 ip_status_after_refresh.rpt。
 - 未重跑整板布局布线、未生成新 bit/XSA、未上板验证。
 
-报告及修改前备份：verification_fine_vio。源码：rtl/ce_nco_vio_ctrl.v、ps/src/ce_nco.h。
+迁移前报告及修改前备份保留在原工程 verification_fine_vio，本目录不重复复制。源码：rtl/ce_nco_vio_ctrl.v、ps/src/ce_nco.h。
 官方接口说明：https://docs.amd.com/r/en-US/pg269-rf-data-converter/Single-Converter-Mode

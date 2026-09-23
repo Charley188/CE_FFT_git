@@ -22,6 +22,7 @@
    - 如果上次仿真还开着，先关闭，再重新 Run Behavioral Simulation，重新读取输入文件。
    - 工程已设置运行到结束。看到 `PASS MAIN` 表示系数加载、数据记录和连续性检查完成。
    - 输出自动写到 `data/output/rtl_ch1.csv`；双路开启时还写 `rtl_ch2.csv`。
+   - 真实 IP 阵列首次编译及运行会花较长时间。控制台依次显示 Loading coefficients、Coefficient load complete、Real FFT data path running、PASS MAIN；不要在 PASS 前运行模式二。本机本轮编译加运行约22分29秒（实际运行约17分30秒），供估计等待时间。
 3. 返回 MATLAB，把 `MAIN.m` 的 `MODE` 改为 2，点击 Run。
    - 从 `data/input` 读取输入信号和系数，执行官方 FFT 位精确模型与 RTL 配套整数运算。
    - 从 `data/output` 读取 RTL CSV，按样点序号对齐，逐点比较，并画波形、误差和频谱。
@@ -73,3 +74,8 @@ NCO/VIO 操作见 `docs/NCO.md`。任何板级实现/时序和上板结论以 `d
 此目录使用本地 Git。源文件、XPR、BD/XCI、MEM、文档进入版本管理；Vivado 缓存和仿真输出不进入。
 完成一个改动就提交；可复现版本打标签，不再复制日期版工程目录。外部备份/远端尚未配置。
 项目移动后，MATLAB 路径自动相对入口定位；Vivado Simulation Settings → xsim.more_options 的 INPUT_DIR/OUTPUT_DIR 需更新为新位置。
+
+## 仿真速度
+
+TB 默认启用 CE_SIM_FAST_RESET：只在 FFT 复位持续至少16个时钟后，暂停 FFT IP 和其配置寄存器的无效复位时钟；在线加载控制器、系数 RAM 和 CDC 继续正常运行。复位解除后所有实际 FFT 数据处理都用原时钟。该选项不进入 ADDA 综合。
+若需检查完整复位期的逐周期行为，在 Vivado Simulation Settings 的 xsim.more_options 末尾增加 `-testplusarg FULL_RESET_CLOCKS`；运行会明显变慢。

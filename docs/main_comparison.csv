@@ -1,0 +1,2 @@
+file,pass,max_component_error,rms_complex_error,float_evm,first_mismatch
+rtl_ch1.csv,1,0,0,0.00294284305153972,NaN

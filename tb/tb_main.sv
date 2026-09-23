@@ -136,6 +136,7 @@ module tb_main;
    repeat(50)@(negedge axi_clk);get(0,st);if(st!='h43454631)$fatal(1,"Wrong controller ID");
    command(1);
    for(integer c=0;c<2;c++)begin
+     $display("Loading coefficients channel=%0d time=%t",c,$time);
      put('h10,c);put('h14,0);crc='hffffffff;
      for(integer k=0;k<2048;k++)begin
        put('h18,{14'b0,h_re[k]});put('h1c,{14'b0,h_im[k]});put('h20,1);idle(st);
@@ -146,7 +147,9 @@ module tb_main;
      get(c?'h28:'h24,st);if(st!=2048)$fatal(1,"Coefficient count mismatch");
      get(c?'h30:'h2c,st);if(st!=expected[c])$fatal(1,"Coefficient CRC mismatch");
    end
+   $display("Coefficient load complete time=%t",$time);
    put('h34,expected[0]);put('h38,expected[1]);command(3);command(4);
+   $display("Real FFT data path running time=%t",$time);
    wait(done[0] && (!ENABLE_SECOND_PATH || done[1]));
    status_fd=$fopen({output_dir,"/tb_status.txt"},"w");$fdisplay(status_fd,"PASS %0d %0d",samples,CHANNELS);$fclose(status_fd);
    $display("PASS MAIN samples=%0d channels=%0d",samples,CHANNELS);$finish;
