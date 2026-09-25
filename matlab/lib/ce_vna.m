@@ -30,6 +30,7 @@ else
  lambda=cfg.regularization*numel(fw);
  for attempt=1:8
   h=[B;0.25*C;sqrt(lambda)*eye(cfg.tap_count)]\[desired;zeros(numel(guardf)+cfg.tap_count,1)];
+  h=conj(h);
   H=fft(h,N);hr=round(real(H)*65536);hi=round(imag(H)*65536);
   fits=all(hr>=-131072 & hr<=131071 & hi>=-131072 & hi<=131071);
   Hq=(hr+1j*hi)/65536;tail_error=sum(abs(ifft(Hq)-[h;zeros(N-numel(h),1)]));
