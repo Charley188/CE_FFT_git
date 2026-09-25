@@ -52,6 +52,8 @@ MAIN 的模式选择是数据生成/比对，不是硬件单/双路开关。
 
 ## VNA：单路两个模式
 
+[VNA预测与FPGA系数导出约定](docs/VNA_CONVENTION.md)：导出保留共轭适配，预测使用原设计系数，TB与MATLAB使用同一份硬件系数。
+
 打开 `matlab/VNA_MAIN.m`，设置 MODE 后点击 Run：
 
 - MODE=1：在 `matlab/vna/output/bypass/` 生成 H=1 的 `h_re.mem`、`h_im.mem`。

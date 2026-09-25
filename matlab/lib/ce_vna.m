@@ -29,28 +29,30 @@ else
  assert(cfg.regularization>0 && isfinite(cfg.regularization));
  lambda=cfg.regularization*numel(fw);
  for attempt=1:8
-  h=[B;0.25*C;sqrt(lambda)*eye(cfg.tap_count)]\[desired;zeros(numel(guardf)+cfg.tap_count,1)];
-  h=conj(h);
-  H=fft(h,N);hr=round(real(H)*65536);hi=round(imag(H)*65536);
+  h_design=[B;0.25*C;sqrt(lambda)*eye(cfg.tap_count)]\[desired;zeros(numel(guardf)+cfg.tap_count,1)];
+  % Conjugate only for the board convention; keep VNA-domain taps for prediction.
+  h_hw=conj(h_design);
+  H=fft(h_hw,N);hr=round(real(H)*65536);hi=round(imag(H)*65536);
   fits=all(hr>=-131072 & hr<=131071 & hi>=-131072 & hi<=131071);
-  Hq=(hr+1j*hi)/65536;tail_error=sum(abs(ifft(Hq)-[h;zeros(N-numel(h),1)]));
-  peak=20*log10(max(abs(fft(h,32768)))+tail_error);
+  Hq=(hr+1j*hi)/65536;tail_error=sum(abs(ifft(Hq)-[h_hw;zeros(N-numel(h_hw),1)]));
+  peak=20*log10(max(abs(fft(h_hw,32768)))+tail_error);
   if fits && peak<=cfg.max_gain_db,break;end
   lambda=lambda*10;
  end
  assert(fits && peak<=cfg.max_gain_db,'Cannot fit MEM range/gain limit; inspect measurement and settings');
- predicted=gp.*(exp(-2j*pi*(fp/Fs)*(0:cfg.tap_count-1))*h);
+ predicted=gp.*(exp(-2j*pi*(fp/Fs)*(0:cfg.tap_count-1))*h_design);
  desired_full=exp(-2j*pi*fp/Fs*cfg.delay_samples);e=predicted./desired_full;
- result=struct('mode',2,'cfg',cfg,'h',h,'Hq',Hq,'regularization_used',lambda/numel(fw),...
+ result=struct('mode',2,'cfg',cfg,'h',h_hw,'h_design',h_design,'h_hw',h_hw,'Hq',Hq,...
+  'hardware_conjugated',true,'prediction_domain','VNA design (floating-point)','regularization_used',lambda/numel(fw),...
   'target_gain',target_gain,'predicted_ripple_db',range(20*log10(abs(e))),...
   'predicted_phase_error_deg',max(abs(angle(e)*180/pi)),'quantized_error_l1',tail_error,'peak_gain_db',peak);
  out=fullfile(cfg.output_dir,'compensated');
  if cfg.plots
-  figure('Name','单路 VNA 补偿预测');tiledlayout(2,1);
+  figure('Name','单路 VNA 补偿预测（设计坐标，浮点）');tiledlayout(2,1);
   nexttile;plot(fp/1e6,20*log10(abs(gp)),fp/1e6,20*log10(abs(predicted)));legend('bypass','补偿预测');ylabel('相对幅度 dB');
   nexttile;plot(fp/1e6,unwrap(angle(gp))*180/pi,fp/1e6,angle(e)*180/pi);legend('bypass 相位','补偿后相对目标延时的残余相位');xlabel('MHz');ylabel('degree');
  end
- fprintf('预测 ripple %.4f dB；量化 OLS 误差界系数 %.6g。实际效果请重新测量。\n',result.predicted_ripple_db,tail_error);
+ fprintf('VNA设计坐标浮点预测 ripple %.4f dB；量化 OLS 误差界系数 %.6g。实际效果请重新测量。\n',result.predicted_ripple_db,tail_error);
 end
 if ~isfolder(out),mkdir(out);end
 write_mem(fullfile(out,'h_re.mem'),hr,18);write_mem(fullfile(out,'h_im.mem'),hi,18);
